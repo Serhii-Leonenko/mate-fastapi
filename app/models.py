@@ -4,7 +4,7 @@ from sqlmodel import Field, SQLModel
 
 
 class SongBase(SQLModel):
-
+    name: str
     artist: str
     year: Optional[int] = None
 
