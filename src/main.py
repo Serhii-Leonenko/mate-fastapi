@@ -1,14 +1,8 @@
 from fastapi import FastAPI
 
-from app.db import init_db
-from app.routes import song_routes
+from src.routes import song_routes
 
 app = FastAPI()
-
-
-@app.on_event("startup")
-async def on_startup():
-    await init_db()
 
 
 @app.get("/ping")

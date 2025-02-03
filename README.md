@@ -1,3 +1,1 @@
-"# mate-fastapi" 
-
-DON'T FORGET TO ADD .env with DATABASE_URL=
+DON'T FORGET TO RENAME .env.sample to .env
